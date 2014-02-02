@@ -11,5 +11,3 @@ def writeToSkype( sBookmarkedChatTopic, sMessage ):
     
 
 
-
-#writeToSkype('Office Office !!!','hello')

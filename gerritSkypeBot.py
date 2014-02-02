@@ -28,15 +28,19 @@ readConfig()
 def updateStatus(statusType):
 	global sQuery
 	sQuery = sQuery + statusType
-	if statusType == merged:
+	if statusType == "merged":
 		newStatus = gerrit.getGerritStatus(sLogMergeFile, sQuery, sEmailDomain)
 		for x in newStatus:
 			sMessage = 'GERRIT BOT ::: ' + x['owner']['name'] + "'s patch " + x['url'] + " has been merged (y)"
 			skype.writeToSkype(sBookmarkedChatTopic, sMessage)
-	else:
+
+	elif statusType == "open":
 		newStatus = gerrit.getGerritStatus(sOpenLogFile, sQuery, sEmailDomain)
 		for x in newStatus:
 			sMessage = 'GERRIT BOT ::: ' + x['owner']['name'] + " has submitted patch " + x['url']
 			skype.writeToSkype(sBookmarkedChatTopic, sMessage)
+
+updateStatus("merged")
+updateStatus("open")
 
 

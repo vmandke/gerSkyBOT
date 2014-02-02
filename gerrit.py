@@ -19,4 +19,3 @@ def getGerritStatus(sLogFile, sQuery, sDomain):
 	return listToMerge
 	
 
-#getGerritStatus('merged.log','ssh -p 29418  Vinaya@gerrit.libreoffice.org gerrit query --format=JSON status:merged  limit:100')
