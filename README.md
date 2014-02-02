@@ -11,7 +11,7 @@ Run the setup.py to install the required Skype4py.
 
       $> python setup.py install
       
-Add a crontab entry to run this script after every 10 mins
+Add a crontab entry to run this script after every 10 mins, on working days Mon - Fri between 10:00 am - 8:00 pm
 
   
       $> crontab -e
