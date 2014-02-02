@@ -1,0 +1,11 @@
+{
+	"gerritUserName"	:	"",
+	"gerritReviewURL"	:	"",
+	"port"			:	"29418",
+	"outputFormat"		:	"JSON",
+	"mergesLogFile"		:	"merged.log",
+	"openLogFile"		:	"open.log",
+	"limitOfOutput"		:	"100",
+	"commonEmailDomain"	:	"",
+	"BookmarkedChatTopic"	:	""
+}
