@@ -13,8 +13,9 @@ Run the setup.py to install the required Skype4py.
       
 Add a crontab entry to run this script after every 10 mins, on working days Mon - Fri between 10:00 am - 8:00 pm
 
+      $> chmod +x /path/gerritSkypeBot.py
   
       $> crontab -e
-      add following:: */10 10-20 * * 1-5 python /path/gerritSkypeBot.py
+      add following:: */10 10-20 * * 1-5   DISPLAY=:0;export DISPLAY;/path/gerritSkypeBot.py
 
 Please edit the config.json...
