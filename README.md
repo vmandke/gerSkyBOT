@@ -16,3 +16,5 @@ Add a crontab entry to run this script after every 10 mins, on working days Mon 
   
       $> crontab -e
       add following:: */10 10-20 * * 1-5 python /path/gerritSkypeBot.py
+
+Please edit the config.json...
