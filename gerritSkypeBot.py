@@ -39,7 +39,8 @@ def updateStatus(statusType):
 		for x in newStatus:
 			sMessage = 'GERRIT BOT ::: ' + x['owner']['name'] + " has submitted patch " + x['url']
 			skype.writeToSkype(sBookmarkedChatTopic, sMessage)
-
+			
+skype.attachToSkype()
 updateStatus("merged")
 updateStatus("open")
 
