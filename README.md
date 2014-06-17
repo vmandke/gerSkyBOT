@@ -3,6 +3,8 @@ gerSkyBOT
 
 Gerrit Skype Bot
 
+It takes updates from the gerrit and puts it on skype.
+An easy way to track patches submitted for review and merged to master... 
 This uses 'gerrit query' to query for recent merges and open patches. 
 
 
