@@ -25,4 +25,4 @@ Please edit the config.json...
 
 **Hack to make it work on Ubnuntu 14.04 as a cronjob** 
 
-      $> */10 10-20 * * 1-5  DISPLAY=:0;export DISPLAY;PID=$(pgrep gnome-session);dbus=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-);export DBUS_SESSION_BUS_ADDRESS=$dbus;/path/script.py >> /path/errorStatus.log
+       */10 10-20 * * 1-5  DISPLAY=:0;export DISPLAY;PID=$(pgrep gnome-session);dbus=$(grep -z DBUS_SESSION_BUS_ADDRESS /proc/$PID/environ|cut -d= -f2-);export DBUS_SESSION_BUS_ADDRESS=$dbus;/path/script.py >> /path/errorStatus.log
